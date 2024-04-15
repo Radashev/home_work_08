@@ -211,9 +211,10 @@ def load_data():
         with open(file_path, 'rb') as file:
             return pickle.load(file)
     else:
-        AddressBook()
-
-
+         return AddressBook()
+     
+     
+     
 @input_error
 def add_birthday(args, book):
     # Витягуємо ім'я та день народження з аргументів функції.
